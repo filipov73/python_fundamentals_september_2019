@@ -16,3 +16,4 @@ while command != "No Money":
     command = input()
 result = [x for x in gifts if x != None]
 print(" ".join(map(str, result)))
+# print(" ".join(result))
