@@ -1,11 +1,10 @@
-def palindrome(text):
-    if text == text[::-1]:
+def is_palindrome(st):
+    if st == st[::-1]:
         return True
     else:
         return False
 
 
-string_list = input().split(", ")
-for t in string_list:
-    print(palindrome(t))
-
+string_num_list = input().split(", ")
+for t in string_num_list:
+    print(is_palindrome(t))
