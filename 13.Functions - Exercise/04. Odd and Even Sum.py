@@ -11,3 +11,7 @@ def odd_even_sum(st):
 
 str_num = input()
 print(odd_even_sum(str_num))
+
+
+# string_int = list(map(int, input()))
+# print(f"Odd sum = {sum(list(filter(lambda x: x % 2 == 1, string_int)))}, Even sum = {sum(list(filter(lambda x: x % 2 == 0, string_int)))}")
