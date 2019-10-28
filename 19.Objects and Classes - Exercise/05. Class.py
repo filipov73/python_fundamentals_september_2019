@@ -8,7 +8,7 @@ class Class:
         self.average_grade = 0
 
     def add_student(self, name, grade):
-        if self.__students_count > 0:
+        if Class.__students_count > 0:
             Class.__students_count -= 1
             self.students.append(name)
             self.grades.append(float(grade))
