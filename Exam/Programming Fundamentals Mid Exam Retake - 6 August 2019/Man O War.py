@@ -23,6 +23,8 @@ while command != "Retire":
         if start_idx >= 0 and end_idx < len(pirate):
             for i in range(start_idx, end_idx + 1):
                 pirate[i] -= damage
+                # if pirate[i] <= 0:
+                #     pass
             if not all([False for x in pirate[start_idx:end_idx + 1] if x <= 0]):
                 print("You lost! The pirate ship has sunken.")
                 stalemate = False
