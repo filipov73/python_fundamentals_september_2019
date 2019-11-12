@@ -21,7 +21,8 @@ while command != "Lumpawaroo":
             for (key, value) in force_book.items():
                 if user in value:
                     force_book[key].remove(user)
-                    force_book[side].append(user)
+
+            force_book[side].append(user)
             # remove_user_side = [key for (key, value) in force_book.items() if user in value][0]
             # change_user_side = force_book[remove_user_side].pop(force_book[remove_user_side].index(user))
             # force_book[side].append(user)
