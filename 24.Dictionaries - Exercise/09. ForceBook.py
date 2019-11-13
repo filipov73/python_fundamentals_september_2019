@@ -7,14 +7,15 @@ while command != "Lumpawaroo":
         side, user = command.split(" | ")
         if side not in force_book:
             force_book[side] = []
-        if user not in force_book[side]:
+        a = list(x for y in force_book.values() for x in y)
+        if user not in a:
             force_book[side].append(user)
     elif " -> " in command:
         user, side = command.split(" -> ")
         if side not in force_book:
             force_book[side] = []
         a = list(x for y in force_book.values() for x in y)
-        if user not in list(x for y in force_book.values() for x in y):
+        if user not in a:
             force_book[side].append(user)
             print(f"{user} joins the {side} side!")
         else:
