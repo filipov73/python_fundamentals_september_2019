@@ -12,7 +12,7 @@ for i in range(max_len):
     if i < min_len:
         total_sum += ord_list_1[i] * ord_list_2[i]
     else:
-        list_ = max(ord_list_1, ord_list_2)
-        total_sum += list_[i]
+        list_n = max(ord_list_1, ord_list_2)
+        total_sum += list_n[i]
 
 print(total_sum)
