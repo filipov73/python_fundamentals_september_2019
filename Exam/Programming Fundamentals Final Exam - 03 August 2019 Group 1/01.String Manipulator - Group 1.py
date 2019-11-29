@@ -35,8 +35,8 @@ while command != "End":
             res = string[::-1]
             last_rev = res.index(token[1])
             print(len(res) - last_rev - 1)
-    # elif len(token) == 1:
-    else:
+    elif len(token) == 1:
+    # else:
         if token[0] == "Lowercase":
             string = string.lower()
             print(string)
