@@ -7,7 +7,6 @@ for _ in range(number):
     password = input()
     target = re.match(pattern, password)
     if target and target.group("start") == target.group("end"):
-        # if target.group("start") == target.group("end"):
         res = target.group("first") + target.group("second") + target.group("third") + target.group("fourth")
         print(f"Password: {res}")
     else:
