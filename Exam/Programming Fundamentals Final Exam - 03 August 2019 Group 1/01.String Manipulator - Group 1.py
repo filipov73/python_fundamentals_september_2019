@@ -25,16 +25,18 @@ while command != "End":
             else:
                 print(False)
         elif token[0] == "Start":
-            start_str = token[1]
-            matches = re.findall(rf"^{start_str}", string)
-            if matches:
-                print(True)
-            else:
-                print(False)
+            print(string.startswith(token[1]))
+            # start_str = token[1]
+            # matches = re.findall(rf"^{start_str}", string)
+            # if matches:
+            #     print(True)
+            # else:
+            #     print(False)
         elif token[0] == "FindIndex":
-            res = string[::-1]
-            last_rev = res.index(token[1])
-            print(len(res) - last_rev - 1)
+            print(string.rfind(token[1]))
+            # res = string[::-1]
+            # last_rev = res.index(token[1])
+            # print(len(res) - last_rev - 1)
     elif len(token) == 1:
     # else:
         if token[0] == "Lowercase":
